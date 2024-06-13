@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task6</title>
+    <style>
+        img {
+            border-radius: 50%;
+            margin: auto;
+            width: 50%;
+            padding: 100px;
+        }
+
+        #tot{
+            display: block;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+
+        #btn1{
+            width:100%;
+        }
+
+        #btn{
+            width:100%;
+            background-color: rgb(145, 233, 145);
+        }
+        #last{
+            background-color: grey;
+            padding: 0px;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        #p1{
+            display: block;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="tot">
+        <div id="img">
+            <img src="./imgtask6.jpeg" alt="error" >
+        </div>
+        <div>
+            <form>
+                <label for="uname">UserName:</label><br>
+                <input type="text" placeholder="Enter Username" id="btn1"><br><br>
+                <label for="pname">Password:</label><br>
+                <input type="password" placeholder="Enter Password" id="btn1"><br><br>
+                <button type="submit" id="btn">login</button><br><br>
+                <input type="checkbox">
+                <label for="chk">Remember me</label>
+            </form>
+
+            <div id="last">
+                <div>
+                    <button type="submit" style="background-color: orange; margin-top:25px;">cancel</button>
+
+                </div>
+                <div>
+                    <p id="p1">Forgot <u>Password?</u></p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
