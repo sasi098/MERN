@@ -1,127 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigatin Bar</title>
     <style>
-        .tot{
-            width:220px;
-            display:flex;
-            padding-top: 2px;
-            margin-top: 90px;
-            margin-left:auto;
-        }
-        .one{
-            width:220px;
-            display:flex;
-            padding-top: 2px;
-            margin-top: 40px;
-            margin-left:auto;
-            background-color: rgb(164, 164, 173);
-            border-radius: 10px; 
-            border: 2px solid black;
-        }
-
-        #one11:hover{
-            border: 1px solid black;
-            background-color: rgb(192, 192, 178);
-        }
-        #one22:hover{
-            border: 1px solid black;
-            background-color: rgb(161, 161, 150);
-        }
-        #one33:hover{
-            border: 1px solid black;
-            background-color: rgb(173, 173, 160);
-        }
-        #one44:hover{
-            border: 1px solid black;
-            background-color: rgb(189, 189, 170);
-        }
-        #one55:hover{
-            border: 1px solid black;
-            background-color: rgb(187, 187, 176);
-        }
-        
-        .two{
-            border: 2px solid black;
-            width:220px;
-            background-color: rgb(135, 172, 240);
-        }
-
-        #one1:hover{
-            border: 1px solid black;
-            background-color: orange;
-        }
-        #one2:hover{
-            border: 1px solid black;
-            background-color: orange;
-        }
-        #one3:hover{
-            border: 1px solid black;
-            background-color: orange;
-        }
-        #one4:hover{
-            border: 1px solid black;
-            background-color: orange;
-        }
-        #one5   :hover{
-            border: 1px solid black;
-            background-color: orange;
-        }
-
+      #horizontal {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1rem;
+      }
+      .nav-hor-list {
+        display: block;
+        border: 1px solid blue;
+        padding: 1rem;
+        background-color: cadetblue;
+      }
+      .nav-hor-list:hover {
+        background-color: rgb(217, 255, 0);
+      }
+      .vertical {
+        display: grid;
+        width: 7%;
+      }
+      .nav-ver-list {
+        display: block;
+        border: 1px solid blue;
+        padding: 1rem;
+        background-color: cadetblue;
+      }
+      .nav-ver-list:hover {
+        background-color: rgb(217, 255, 0);
+      }
     </style>
-</head>
-<body>
-    <div class="tot">
-        <p>Horizantal Navigation Bar</p>
-    </div>
-    <div class="one"> 
-        <div id="one11">
-            <p>Home</p>
-        </div>
-
-        <div id="one22">
-            <p>Java</p>
-        </div>
-
-        <div id="one33">
-            <p>Css</p>
-        </div>
-
-        <div id="one44">
-            <p>HTML</p>
-        </div>
-
-        <div id="one55">
-            <p>BootsStrap</p>
-        </div>
-
-    </div>
-    <p>Vertical Navigation Bar</p>
-
-    <div class="two"> 
-        <div id="one1">
-            <p>Home</p>
-        </div>
-
-        <div id="one2">
-            <p>Java</p>
-        </div>
-
-        <div id="one3">
-            <p>Css</p>
-        </div>
-
-        <div id="one4">
-            <p>HTML</p>
-        </div>
-
-        <div id="one5">
-            <p>BootsStrap</p>
-        </div>
-
-    </div>
-</body>
+  </head>
+  <body>
+    <h3 style="padding: 1rem">Horizontal Navigation Bar</h3>
+    <nav id="horizontal">
+      <div class="nav-hor-list">
+        <a href="#home" style="text-decoration: none; color: black">Home</a>
+      </div>
+      <div class="nav-hor-list">
+        <a href="#css" style="text-decoration: none; color: black">CSS</a>
+      </div>
+      <div class="nav-hor-list">
+        <a href="#html" style="text-decoration: none; color: black">HTML</a>
+      </div>
+      <div class="nav-hor-list">
+        <a href="#js" style="text-decoration: none; color: black">Java</a>
+      </div>
+      <div class="nav-hor-list">
+        <a href="#bs" style="text-decoration: none; color: black">Bootstrap</a>
+      </div>
+    </nav>
+    <h3>Vertical Navigation Bar</h3>
+    <nav class="vertical">
+      <div class="nav-ver-list">
+        <a href="#home" style="text-decoration: none; color: black">Home</a>
+      </div>
+      <div class="nav-ver-list">
+        <a href="#css" style="text-decoration: none; color: black">CSS</a>
+      </div>
+      <div class="nav-ver-list">
+        <a href="#html" style="text-decoration: none; color: black">HTML</a>
+      </div>
+      <div class="nav-ver-list">
+        <a href="#js" style="text-decoration: none; color: black">Java</a>
+      </div>
+      <div class="nav-ver-list">
+        <a href="#bs" style="text-decoration: none; color: black">Bootstrap</a>
+      </div>
+    </nav>
+  </body>
 </html>

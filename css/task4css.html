@@ -1,63 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Task 4</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-  }
-
-  .sidenav {
-    height: 100%;
-    width: 75px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-
-  .sidenav a:hover {
-    width: 200px;
-  }
-
-  .sidenav a.green { background-color: #4CAF50; }
-  .sidenav a.blue { background-color: #2196F3; }
-  .sidenav a.red { background-color: #f44336; }
-  .sidenav a.grey { background-color: #555; }
-
-  .main {
-    margin-left: 85px; /* Same as the width of the sidenav */
-    padding: 0px 10px;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        body{
+            margin-left:0;
+        }
+        .outer{
+            display:flex;
+            
+        }
+        .inner1{
+            display:grid;
+            padding-right: 4rem;
+        }
+        .box{
+            width:4rem;
+            height: 4rem;
+            margin-left:0px;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-bottom:1rem;
+        }
+        .box:hover{
+            height:20rem;
+            width:20rem;
+            transition: 3s ease-in-out;
+        }
+    </style>
 </head>
 <body>
-
-<div class="sidenav">
-  <a href="#" class="green"></a>
-  <a href="#" class="blue"></a>
-  <a href="#" class="red"></a>
-  <a href="#" class="grey"></a>
-</div>
-
-<div class="main">
-  <h2>Hoverable Sidenav Buttons</h2>
-  <p>Hover over the buttons in the left side navigation to open them.</p>
-</div>
-
+    <div class="outer">
+        <div class="inner1">
+            <div class="box" style="background-color:green; border:1px solid green;"></div>
+            <div class="box" style="background-color:blue; border: 1px solid blue;"></div>
+            <div class="box" style="background-color:red; border: 1px solid red;"></div>
+            <div class="box" style="background-color:gray; border: 1px solid gray;"></div>
+        </div>
+        <div class="inner2">
+            <h1>Hoverable Sidenav Buttons</h1>
+            <p>Hover over the buttons in the left side navigation to open them</p>
+        </div>
+    </div>
 </body>
 </html>

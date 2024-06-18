@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>task3</title>
-</head>
-<body>
-    <div>
-        <p>click any of the following links</p>
-        <a href="https://drive.google.com/file/d/1sh--6okBgQHCArJoQOh1ELxPuVHOQJ47/view" target="_blank">opens in new</a>
-        <a href="https://drive.google.com/file/d/1sh--6okBgQHCArJoQOh1ELxPuVHOQJ47/view">opens in self</a>
-        <a href="./task2.html">opens in parent</a>
-        <a href="">opens in body</a>
-        <a href="https://support.google.com/mail/answer/9259768?hl=en#zippy=%2Clearn-how" target="_blank">send email</a>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+  </head>
+  <body id="body-start">
+    <div
+      style="
+        border: 1px solid black;
+        padding: 1rem;
+        width: 40%;
+        background-color: rgb(228, 232, 234);
+      "
+    >
+      <p>Click any of the following links</p>
+      <a href="www.google.com" target="_blank">Opens in New</a>
+      <span>|</span>
+      <a href="www.google.com" target="_self">Opens in Self</a>
+      <span>|</span>
+      <a href="www.google.com" target="_parent">Opens in Parent</a>
+      <span>|</span>
+      <a href="#body-start" style="color:blue">Opens in Body</a>
+      <span>|</span>
+      <a href="mailto:someone@gmail.com" style="background-color: white"
+        >Send mail</a
+      >
     </div>
-    <style>
-        div{
-            display: block;
-            height: 100px;
-            margin: 100px;
-            border:2px solid rgb(24, 22, 22);
-            background-color: rgb(231, 225, 225);
-            border-radius: 0px;
-
-        }
-    </style>
-</body>
+  </body>
 </html>
